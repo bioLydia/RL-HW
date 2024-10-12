@@ -174,12 +174,8 @@ def main():
 		for step in range(args.num_steps): # 250
 			im = Image.fromarray(obs)
 			im.save('code/imgs/' + str('screen') + '.jpeg')
-			# 如果标记了新的样本, 则需要添加新的数据和标签
-			# 使用哈希表查找并返回出现频率最高的标签
-			# 
-			
+
 			new_label = expert_model.predict(obs_.reshape(1,-1))[0]
-			# print(f'expert new label {new_label}')
 
 			# 数据集里的label范围都是0~7
 			train_data_set['data'].append(obs_)
