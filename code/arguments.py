@@ -24,7 +24,7 @@ def get_args():
     parser.add_argument(
         '--num-frames',
         type=int,
-        default=30000)
+        default=3000)
 
     ## other parameter
     parser.add_argument(

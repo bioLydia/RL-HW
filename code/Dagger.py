@@ -17,7 +17,7 @@ class MyDaggerAgent(DaggerAgent):
 	def __init__(self, necessary_parameters=None):
 		super(DaggerAgent, self).__init__()
 		# init your model
-		self.model = KNeighborsClassifier(n_neighbors=10)
+		self.model = KNeighborsClassifier(n_neighbors=1)
 
 
 	# train your model with labeled data
